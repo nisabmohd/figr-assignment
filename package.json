@@ -1,0 +1,29 @@
+{
+  "name": "figr-frontend-assignment",
+  "private": true,
+  "description": "Board viewer for live, cross-origin page previews (Figr frontend engineer assignment)",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "start": "node scripts/start.mjs",
+    "backend": "node backend/server.js",
+    "dev": "vite --config frontend/vite.config.mts",
+    "typecheck": "tsc -p frontend --noEmit",
+    "build": "vite build --config frontend/vite.config.mts",
+    "test": "python3 tests/browser/run_all.py"
+  },
+  "dependencies": {
+    "immer": "^10.1.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "zustand": "^4.5.5"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.3",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10"
+  }
+}
